@@ -605,7 +605,8 @@ font-size: 20px !important;
     /* padding: 20px; */
   }
   .subscribe-news-parent {
-    display: flex;
+    display: flex !important;
+    flex-direction: column !important;
     justify-content: center;
     align-items: center;
     background-color: #292A32;
@@ -716,10 +717,13 @@ font-size: 20px !important;
     }
 
     .subscribe-news-parent {
+      display: flex !important;
+      flex-direction: column !important;
       margin-top: 8rem;
       width: 104% !important;
 
     }
+   
     .icon-name{
       margin-top: 4rem;
     }
@@ -741,4 +745,14 @@ font-size: 20px !important;
     .footer-contact{
       display: none;
     }
+  }
+  @media only screen and (max-width: 540px){
+    .footer-copyright{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+    }
+
+    
   }
